@@ -202,7 +202,7 @@ public class TicketServiceTest {
 //        Mockito.when(ticketRepository.findById(any())).thenThrow(new AssertionError("We need locking, use findByIdForUpdate here"));
         Mockito.when(ticketRepository.getReferenceById(any())).thenThrow(new AssertionError("We need locking, use findByIdForUpdate here"));
 
-        Mockito.when(ticketRepository.findById(eq(notExistingId))).thenReturn(null);
+        Mockito.when(ticketRepository.findById(eq(notExistingId))).thenReturn(Optional.empty());
 
         assertThrows(EntityNotFoundException.class, () -> ticketService.update(changingTicket, notExistingId));
     }

@@ -82,6 +82,51 @@ public class TicketService {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public List<TicketDTO> buy(List<TicketDTO> ticketDTOs) {
         List<Integer> ticketIds = ticketDTOs.stream().map(TicketDTO::getId).collect(Collectors.toList());
         List<Ticket> tickets = ticketDTOs.stream().map(TicketMapper::fromDTO).collect(Collectors.toList());
