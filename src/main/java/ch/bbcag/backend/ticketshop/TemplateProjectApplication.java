@@ -1,4 +1,4 @@
-package ch.bbcag.backend.templateproject;
+package ch.bbcag.backend.ticketshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
